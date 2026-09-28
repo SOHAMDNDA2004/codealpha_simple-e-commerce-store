@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders | ShopVibe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .orders-container { background: var(--surface-color); padding: 30px; border-radius: var(--radius); box-shadow: var(--shadow); overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { padding: 15px; text-align: left; border-bottom: 1px solid #e5e7eb; }
+        th { background-color: #f9fafb; color: var(--secondary-color); font-weight: 600; }
+        tr:hover { background-color: #f3f4f6; }
+        .order-id { font-family: monospace; color: var(--text-muted); }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Shop<span>Vibe</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cart.html" class="cart-link">Cart <span id="cart-count" class="badge">0</span></a></li>
+                <li><a href="login.html" class="login-btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2 class="section-title">Order History</h2>
+        <div id="loading" class="status-msg">Loading your orders...</div>
+        <div id="error" class="status-msg error hidden"></div>
+        
+        <div class="orders-container hidden" id="orders-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Date</th>
+                        <th>Total Price</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="orders-list">
+                    <!-- Orders injected here by JS -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="./js/navbar.js"></script>
+    <script src="./js/orders.js"></script>
+</body>
+</html>

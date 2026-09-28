@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopVibe | Premium Tech & Lifestyle</title>
+    <!-- Modern Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Shop<span>Vibe</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cart.html" class="cart-link">Cart <span id="cart-count" class="badge">0</span></a></li>
+                <li><a href="login.html" class="login-btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- New Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Discover the Future of Tech & Lifestyle</h1>
+            <p>Elevate your everyday with our premium curated collection. Free shipping on all orders over $50.</p>
+            <a href="#latest-products" class="btn btn-primary">Shop the Collection</a>
+        </div>
+    </section>
+
+    <main class="container" id="latest-products">
+        <h2 class="section-title">Latest Arrivals</h2>
+        <div id="loading" class="status-msg">Loading premium products...</div>
+        <div id="error" class="status-msg error hidden"></div>
+        <div id="product-list" class="grid-container">
+            <!-- Products injected here by JS -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ShopVibe. All rights reserved.</p>
+    </footer>
+
+    <script src="./js/navbar.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

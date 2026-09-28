@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details | ShopVibe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">ShopVibe</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <a href="index.html" class="btn back-btn">&larr; Back to Products</a>
+        
+        <div id="loading" class="status-msg">Loading product details...</div>
+        <div id="error" class="status-msg error hidden"></div>
+        
+        <div id="product-details" class="product-container hidden">
+            <!-- Product details injected here by JS -->
+        </div>
+    </main>
+
+    <script src="./js/product.js"></script>
+    <script src="./js/navbar.js"></script>
+</body>
+</html>
